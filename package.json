@@ -1,0 +1,19 @@
+{
+  "name": "personal-portfolio",
+  "version": "1.0",
+  "description": "My personal portfolio webiste, using HTML, CSS, TailwindCSS, JS and more.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "tailwindcss -i ./src/main.css -o ./dist/output.css --watch"
+  },
+  "license": "ISC",
+  "devDependencies": {
+    "postcss": "^8.4.26",
+    "tailwindcss": "^3.3.3"
+  },
+  "dependencies": {
+    "@tailwindcss/forms": "^0.5.4",
+    "typed.js": "^2.0.16"
+  }
+}
