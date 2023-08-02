@@ -1,8 +1,2 @@
-# Ignore distribution directory
-/dist
-
 # Ignore dependencies directory
 /node_modules
-
-# Ignore package lock file
-/package-lock.json
