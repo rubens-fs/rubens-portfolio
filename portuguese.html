@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio de Rubens Silveira</title>
+    <!-- TailwindCSS -->
+    <link rel="stylesheet" href="./dist/output.css">
+    <!-- Boxicons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;600&display=swap" rel="stylesheet"> 
+    <!-- Typed JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
+</head>
+<body>
+    <!-- Navigation bar -->
+    <nav>
+        <div class="container flex items-center justify-between">
+            <a href="#">
+                <img class="h-12" src="./src/images/logo.svg" alt="Imagem da Logo">
+            </a>
+            <input type="checkbox" class="peer hidden" name="hamburger" id="hamburger">
+            <label class="peer-checked:hamburger block cursor-pointer p-2 md:hidden" for="hamburger">
+                <div class="m-auto h-0.5 w-6 rounded bg-white transition duration-300"></div>
+                <div class="m-auto mt-2 h-0.5 w-6 rounded bg-white transition duration-300"></div>
+            </label>
+            <div class="absolute inset-x-0 top-20 flex -translate-x-full flex-col items-center gap-8 bg-slate-800 py-8 opacity-0 transition duration-300 peer-checked:translate-x-0 peer-checked:opacity-100 md:relative md:top-0 md:translate-x-0 md:flex-row md:bg-transparent md:py-0 md:opacity-100">
+                <a href="#about" class="text-white hover:border-b hover:border-white hover:pb-2 transition-all duration-300">SOBRE MIM</a>
+                <a href="#skills" class="text-white hover:border-b hover:border-white hover:pb-2 transition-all duration-300">O QUE FAÇO</a>
+                <a href="#portfolio" class="text-white hover:border-b hover:border-white hover:pb-2 transition-all duration-300">PORTFÓLIO</a>
+                <a href="#contact" class="text-white hover:border-b hover:border-white hover:pb-2 transition-all duration-300">CONTATO</a>
+                <a href="/index.html" id="btn-language" class="text-white border border-blue-500 hover:border-blue-600 transition-all duration-300 px-4 py-2">ENGLISH</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="bg-hero-img">
+        <div class="flex items-center justify-center flex-col h-screen">
+            <h2 class="text-white text-xl md:text-2xl font-bold mt-4 text-center">Olá, eu sou o Rubens Silveira</h2>
+            <h1 class="text-white font-bold text-5xl md:text-6xl text-center"><span id="typed-pt"></span></h1>
+            <div class="flex items-center justify-center flex-wrap gap-8 mt-8">
+                <a href="https://www.instagram.com/rubensfs_/" class="text-slate-900 hover:text-white hover:bg-slate-900 transition duration-300 ease-out flex items-center justify-center w-12 h-12 bg-white rounded-full" target="_blank" rel="noopener" title="Rubens' Instagram">
+                    <i class="bx bxl-instagram text-3xl"></i>
+                </a>
+                <a href="https://twitter.com/rubensfs_" class="text-slate-900 hover:text-white hover:bg-slate-900 transition duration-300 ease-out flex items-center justify-center w-12 h-12 bg-white rounded-full" target="_blank" rel="noopener" title="Rubens' Twitter">
+                    <i class="bx bxl-twitter text-3xl"></i>
+                </a>
+                <a href="https://www.twitch.tv/ruiytv" class="text-slate-900 hover:text-white hover:bg-slate-900 transition duration-300 ease-out flex items-center justify-center w-12 h-12 bg-white rounded-full" target="_blank" rel="noopener" title="Rubens' Twitch Channel">
+                    <i class="bx bxl-twitch text-3xl"></i>
+                </a>
+                <a href="https://github.com/rubens-fs" class="text-slate-900 hover:text-white hover:bg-slate-900 transition duration-300 ease-out flex items-center justify-center w-12 h-12 bg-white rounded-full" target="_blank" rel="noopener" title="Rubens' Github">
+                    <i class="bx bxl-github text-3xl"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/rubens-fs/" class="text-slate-900 hover:text-white hover:bg-slate-900 transition duration-300 ease-out flex items-center justify-center w-12 h-12 bg-white rounded-full" target="_blank" rel="noopener" title="Rubens' LinkedIn">
+                    <i class="bx bxl-linkedin text-3xl"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- About me section -->
+    <section class="container" id="about">
+        <div class="grid grid-cols-1 md:grid-cols-2 items-center gap-8">
+            <img src="./src/images/profile-picture.png" alt="Imagem de Perfil" class="rounded-xl">
+            <div>
+                <h3 class="font-bold text-blue-600 text-2xl">SOBRE MIM</h3>
+                <h4 class="text-white font-bold text-3xl mt-2">Rubens Silveira</h4>
+                <p class="text-lg text-slate-500 mt-8">
+                    Estudante de Análise e Desenvolvimento de Sistemas na Universidade Estácio (atualmente no 3º semestre) e formado em Geografia pela Universidade Estadual do Ceará. Sou um streamer apaixonado com interesses em tecnologia, livros, exercícios físicos e idiomas, estudando inglês (nível intermediário) e coreano (nível básico).
+                </p>
+                <p class="text-lg text-slate-500 mt-2">
+                    Desde criança, o mundo da tecnologia e dos computadores sempre me intrigou. Resolver problemas relacionados a computadores alimentou minha paixão por software, levando-me a me aventurar na programação após concluir meu curso de Geografia.
+                </p>
+                <p class="text-lg text-slate-500 mt-2">
+                    Possuo habilidades sociais bem desenvolvidas (o que me levou a seguir uma carreira de streamer) e desejo por liderança, adquirido por meio de experiências de vida lidando com grupos diversos, superando desafios e cumprindo prazos. Dedico-me à leitura diária em uma ampla gama de temas, incluindo robótica, natureza humana e filosofia.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills section -->
+    <section class="container" id="skills">
+        <h3 class="font-bold text-blue-600 text-2xl text-center">O QUE FAÇO</h3>
+        <h4 class="text-white font-bold text-3xl mt-2 text-center">Especializado em</h4>
+        <div class="mx-auto flex flex-wrap justify-center gap-7 mt-8">
+            <!-- Skill 1 -->
+            <div class="flex flex-col flex-auto bg-slate-800/80 rounded-xl px-6 py-5 max-w-sm">
+                <div class="flex gap-4 mb-5">
+                    <img class="p-2 rounded-sm bg-slate-700 h-16" src="./src/images/monitor-screen-svgrepo-com.svg" alt="Ícone de Computador">
+                    <h5 class="text-2xl font-semibold text-white">Desenvolvimento <br>Front-end</h5>
+                </div>
+                <p class="text-lg text-slate-400">
+                    Tenho experiência com HTML, CSS e JavaScript para criar aplicações web interativas. Além disso, estou familiarizado com Tailwind e Bootstrap para designs responsivos. Atualmente, estou focado em construir e consolidar conhecimentos em React e Typescript.
+                </p>
+            </div>
+
+            <!-- Skill 2 -->
+            <div class="flex flex-col flex-auto bg-slate-800/80 rounded-xl px-6 py-5 max-w-sm">
+                <div class="flex gap-4 mb-5">
+                    <img class="p-2 rounded-sm bg-slate-700 h-16" src="./src/images/salesforce-svgrepo-com.svg" alt="Ícone de Logo da Salesforce">
+                    <h5 class="text-2xl font-semibold text-white">Plataforma <br>Salesforce</h5>
+                </div>
+                <p class="text-lg text-slate-400">
+                    Habilidoso em ferramentas do Salesforce, como Marketing Cloud Admin e Experience Cloud, permitindo a configuração e gestão de campanhas de marketing e experiências do cliente.
+                </p>
+            </div>
+
+            <!-- Skill 3 -->
+            <div class="flex flex-col flex-auto bg-slate-800/80 rounded-xl px-6 py-5 max-w-sm">
+                <div class="flex gap-4 mb-5">
+                    <img class="p-2 rounded-sm bg-slate-700 h-16" src="./src/images/monitor-svgrepo-com.svg" alt="Ícone de um Computador com uma engrenagem">
+                    <h5 class="text-2xl font-semibold text-white">Desenvolvedor <br>Back-end</h5>
+                </div>
+                <p class="text-lg text-slate-400">
+                    Proficiente em C, Python e MySQL para desenvolvimento do lado do servidor. Utilizo Git e GitHub para controle de versão e colaboração.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio projects section -->
+    <section class="container" id="portfolio">
+        <h3 class="font-bold text-blue-600 text-2xl text-center">PORTFÓLIO</h3>
+        <h4 class="text-white font-bold text-3xl mt-2 text-center">Alguns de meus projetos</h4>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7 mt-8">
+
+            <!-- Card Portfolio 1 -->
+            <div class="flex flex-col justify-between bg-slate-800/80 rounded-xl overflow-hidden">
+                <picture class="rounded-lg block overflow-hidden">
+                    <img class="hover:scale-125 ease-in duration-200" src="./src/images/free-content-search-extension-home.png" alt="Primeiro Projeto">
+                </picture>
+                <div class="px-5 py-4">
+                    <h4 class="text-2xl font-medium text-white">Free Contents Search Extension</h4>
+                    <p class="text-lg text-slate-400 mb-3">HTML, CSS e Javascript.</p>
+                    <div class="flex justify-center space-x-4">
+                        <a href="javascript:void(0);" class="flex items-center justify-center w-1/2 py-2 font-semibold text-sm text-white rounded-md bg-blue-500 hover:scale-105 hover:bg-blue-600 active:scale-95 transition-all duration-300">
+                            <i class="bx bx-globe text-2xl pr-1"></i>
+                            Ver Demo
+                        </a>
+                        <a href="https://github.com/rubens-fs/free-contents-search-extension" class="flex items-center justify-center w-1/2 py-2 font-semibold text-sm text-white rounded-md bg-blue-500 hover:scale-105 hover:bg-blue-600 active:scale-95 transition-all duration-300" target="_blank" rel="noopener">
+                            <i class="bx bxl-github text-2xl pr-1"></i>
+                            Github
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Card Portfolio 2 -->
+            <div class="flex flex-col justify-between bg-slate-800/80 rounded-xl overflow-hidden">
+                <picture class="rounded-lg block overflow-hidden">
+                    <img class="hover:scale-125 ease-in duration-200" src="./src/images/password-generator-home.png" alt="Segundo Projeto">
+                </picture>
+                <div class="px-5 py-4">
+                    <h4 class="text-2xl font-medium text-white">Password Generator</h4>
+                    <p class="text-lg text-slate-400 mb-3">HTML, CSS e Javascript.</p>
+                    <div class="flex justify-center space-x-4">
+                        <a href="https://rubens-fs.github.io/password-generator/" class="flex items-center justify-center w-1/2 py-2 font-semibold text-sm text-white rounded-md bg-blue-500 hover:scale-105 hover:bg-blue-600 active:scale-95 transition-all duration-300" target="_blank" rel="noopener">
+                            <i class="bx bx-globe text-2xl pr-1"></i>
+                            Ver Demo
+                        </a>
+                        <a href="https://github.com/rubens-fs/password-generator" class="flex items-center justify-center w-1/2 py-2 font-semibold text-sm text-white rounded-md bg-blue-500 hover:scale-105 hover:bg-blue-600 active:scale-95 transition-all duration-300" target="_blank" rel="noopener">
+                            <i class="bx bxl-github text-2xl pr-1"></i>
+                            Github
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card Portfolio 3 -->
+            <div class="flex flex-col justify-between bg-slate-800/80 rounded-xl overflow-hidden">
+                <picture class="rounded-lg block overflow-hidden">
+                    <img class="hover:scale-125 ease-in duration-200" src="./src/images/github-api-home.png" alt="Terceiro Projeto">
+                </picture>
+                <div class="px-5 py-4">
+                    <h4 class="text-2xl font-medium text-white">Github API</h4>
+                    <p class="text-lg text-slate-400 mb-3">HTML, CSS e ReactJS.</p>
+                    <div class="flex justify-center space-x-4">
+                        <a href="javascript:void(0);" class="flex items-center justify-center w-1/2 py-2 font-semibold text-sm text-white rounded-md bg-blue-500 hover:scale-105 hover:bg-blue-600 active:scale-95 transition-all duration-300">
+                            <i class="bx bx-globe text-2xl pr-1"></i>
+                            Ver Demo
+                        </a>
+                        <a href="https://github.com/rubens-fs/github-api" class="flex items-center justify-center w-1/2 py-2 font-semibold text-sm text-white rounded-md bg-blue-500 hover:scale-105 hover:bg-blue-600 active:scale-95 transition-all duration-300" target="_blank" rel="noopener">
+                            <i class="bx bxl-github text-2xl pr-1"></i>
+                            Github
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card Portfolio 4 -->
+            <div class="flex flex-col justify-between bg-slate-800/80 rounded-xl overflow-hidden">
+                <picture class="rounded-lg block overflow-hidden">
+                    <img class="hover:scale-125 ease-in duration-200" src="./src/images/space-slug-game-demo.png" alt="Quarto Projeto">
+                </picture>
+                <div class="px-5 py-4">
+                    <h4 class="text-2xl font-medium text-white">Space Slug</h4>
+                    <p class="text-lg text-slate-400 mb-3">HTML, CSS, Javascript, jQuery e jQueryCollision.</p>
+                    <div class="flex justify-center space-x-4">
+                        <a href="https://rubens-fs.github.io/space-slug/" class="flex items-center justify-center w-1/2 py-2 font-semibold text-sm text-white rounded-md bg-blue-500 hover:scale-105 hover:bg-blue-600 active:scale-95 transition-all duration-300" target="_blank" rel="noopener">
+                            <i class="bx bx-globe text-2xl pr-1"></i>
+                            Ver Demo
+                        </a>
+                        <a href="https://github.com/rubens-fs/space-slug" class="flex items-center justify-center w-1/2 py-2 font-semibold text-sm text-white rounded-md bg-blue-500 hover:scale-105 hover:bg-blue-600 active:scale-95 transition-all duration-300" target="_blank" rel="noopener">
+                            <i class="bx bxl-github text-2xl pr-1"></i>
+                            Github
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card Portfolio 5 -->
+            <div class="flex flex-col justify-between bg-slate-800/80 rounded-xl overflow-hidden">
+                <picture class="rounded-lg block overflow-hidden">
+                    <img class="hover:scale-125 ease-in duration-200" src="./src/images/k-flix-home.png" alt="Quinto Projeto">
+                </picture>
+                <div class="px-5 py-4">
+                    <h4 class="text-2xl font-medium text-white">K-FLIX</h4>
+                    <p class="text-lg text-slate-400 mb-3">HTML, CSS, JavaScript e Elementos de Carrossel.</p>
+                    <div class="flex justify-center space-x-4">
+                        <a href="https://rubens-fs.github.io/k-flix/" class="flex items-center justify-center w-1/2 py-2 font-semibold text-sm text-white rounded-md bg-blue-500 hover:scale-105 hover:bg-blue-600 active:scale-95 transition-all duration-300" target="_blank" rel="noopener">
+                            <i class="bx bx-globe text-2xl pr-1"></i>
+                            Ver Demo
+                        </a>
+                        <a href="https://github.com/rubens-fs/k-flix" class="flex items-center justify-center w-1/2 py-2 font-semibold text-sm text-white rounded-md bg-blue-500 hover:scale-105 hover:bg-blue-600 active:scale-95 transition-all duration-300" target="_blank" rel="noopener">
+                            <i class="bx bxl-github text-2xl pr-1"></i>
+                            Github
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card Portfolio 6 -->
+            <div class="flex flex-col justify-between bg-slate-800/80 rounded-xl overflow-hidden">
+                <picture class="rounded-lg block overflow-hidden">
+                    <img class="hover:scale-125 ease-in duration-200" src="./src/images/alura-cast-home.png" alt="Sexto Projeto">
+                </picture>
+                <div class="px-5 py-4">
+                    <h4 class="text-2xl font-medium text-white">Website AluraCast</h4>
+                    <p class="text-lg text-slate-400 mb-3">HTML e CSS.</p>
+                    <div class="flex justify-center space-x-4">
+                        <a href="https://aluracast-grid.vercel.app/" class="flex items-center justify-center w-1/2 py-2 font-semibold text-sm text-white rounded-md bg-blue-500 hover:scale-105 hover:bg-blue-600 active:scale-95 transition-all duration-300" target="_blank" rel="noopener">
+                            <i class="bx bx-globe text-2xl pr-1"></i>
+                            Ver Demo
+                        </a>
+                        <a href="https://github.com/rubens-fs/aluracast-grid" class="flex items-center justify-center w-1/2 py-2 font-semibold text-sm text-white rounded-md bg-blue-500 hover:scale-105 hover:bg-blue-600 active:scale-95 transition-all duration-300" target="_blank" rel="noopener">
+                            <i class="bx bxl-github text-2xl pr-1"></i>
+                            Github
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact section -->
+    <section class="container" id="contact">
+        <div class="max-w-5xl mx-auto bg-slate-800/80 rounded-xl">
+            <div class="text-center py-16">
+                <h3 class="font-bold text-blue-600 text-2xl text-center">CONTATO</h3>
+                <h4 class="text-white font-bold text-3xl mt-2 text-center">Possue algum projeto em mente?</h4>
+                <button onclick="window.location.href='mailto:rubens.frota@outlook.com'" class="mt-4 px-6 py-3 font-semibold text-sm text-white rounded-md bg-blue-500 hover:scale-105 hover:bg-blue-600 active:scale-95 transition-all duration-300">Contate-me</button>
+            </div>            
+        </div>
+    </section>
+
+    <!-- Footer section -->
+    <footer class="pt-8 pb-6 bg-slate-800/80">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="md:flex justify-between items-start">
+                <span class="text-white text-[26px] font-bold">Rubens<span class="text-white"></span>
+                </span>
+                <div class="w-full links mt-10 md:mt-0 space-y-5 md:w-96 justify-between md:space-y-0 md:flex">
+                    <div class="info">
+                        <h6 class="text-xl text-white font-semibold mb-6">Informações</h6>
+                        <ul class="text-slate-400 space-y-3">
+                            <li class="hover:underline"><a href="https://api.whatsapp.com/send?phone=5585988523291" target="_blank" rel="noopener" title="Send a message to whatsapp">+55 (85) 98852-3291</a></li>
+                            <li class="hover:underline"><a href="https://goo.gl/maps/L1DicMyFAFCwLVxU9" target="_blank" rel="noopener" title="Location from Fortaleza, Brazil">Fortaleza, CE (Brasil)</a></li>
+                        </ul>
+                    </div>
+                    <div class="social">
+                        <h6 class="text-xl text-white font-semibold mb-6">Redes Sociais</h6>
+                        <ul class="text-slate-400 space-y-3">
+                            <li class="hover:underline"><a href="https://www.linkedin.com/in/rubens-fs/" target="_blank" rel="noopener" title="Rubens' LinkedIn">LinkedIn</a></li>
+                            <li class="hover:underline"><a href="https://www.instagram.com/rubensfs_" target="_blank" rel="noopener" title="Rubens' Instagram">Instagram</a></li>
+                            <li class="hover:underline"><a href="https://twitter.com/rubensfs_" target="_blank" rel="noopener" title="Rubens' Twitter">Twitter</a></li>
+                            <li class="hover:underline"><a href="https://www.twitch.tv/ruiytv" target="_blank" rel="noopener" title="Rubens' Twitch Channel">Twitch</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <hr class="h-[2px] w-full mt-16">
+            <div class="flex mt-5 justify-between items-start text-white">
+                <small>Desenvolvido por <span class="text-blue-600">Rubens Silveira</span></small>
+                <small>Copyright &copy; 2023</small>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./src/js/main.js"></script>
+</body>
+</html>
